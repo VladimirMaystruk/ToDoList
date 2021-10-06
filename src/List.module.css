@@ -1,0 +1,49 @@
+.err {
+  color: red;
+}
+
+.button {
+  margin-left: 0.3cm;
+  margin-top: 0.2cm;
+}
+
+.buttonIcon {
+  margin-left: 0.3cm;
+  margin-top: 0.2cm;
+  display: inline-block;
+  position: relative;
+}
+
+.buttonIcon:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  z-index: 1;
+  background: rgba(255, 255, 230, 0.9);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
+
+.text {
+  color: black;
+}
+
+.divX {
+  margin-top: 0.5cm;
+  display: flex;
+  flex-direction: row;
+}
+
+.div {
+  margin-top: 0.3cm;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset {
+  border-color: green;
+  background-color: #07f507;
+}
